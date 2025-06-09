@@ -10,10 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "window.casement")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("W I N D O W S")
+            Button ("I'm a default button"){
+                // switch to a new window
+            }
+            
+            /* Customizing the Text */
+            Button(action: {
+                // Your code here
+            }) {
+            Text("Custom text style")
+                .font(.title)
+            }
         }
         .padding()
     }
